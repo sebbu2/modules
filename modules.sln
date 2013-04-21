@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "modules", "modules.vcproj", "{82596032-07E1-43B4-91DE-FB8EA07D4592}"
+	ProjectSection(ProjectDependencies) = postProject
+		{03B09CCA-1ED9-47F3-AB41-E373EBFAE18F} = {03B09CCA-1ED9-47F3-AB41-E373EBFAE18F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mod", "mod.vcproj", "{03B09CCA-1ED9-47F3-AB41-E373EBFAE18F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82596032-07E1-43B4-91DE-FB8EA07D4592}.Debug|Win32.ActiveCfg = Debug|Win32
+		{82596032-07E1-43B4-91DE-FB8EA07D4592}.Debug|Win32.Build.0 = Debug|Win32
+		{82596032-07E1-43B4-91DE-FB8EA07D4592}.Release|Win32.ActiveCfg = Release|Win32
+		{82596032-07E1-43B4-91DE-FB8EA07D4592}.Release|Win32.Build.0 = Release|Win32
+		{03B09CCA-1ED9-47F3-AB41-E373EBFAE18F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{03B09CCA-1ED9-47F3-AB41-E373EBFAE18F}.Debug|Win32.Build.0 = Debug|Win32
+		{03B09CCA-1ED9-47F3-AB41-E373EBFAE18F}.Release|Win32.ActiveCfg = Release|Win32
+		{03B09CCA-1ED9-47F3-AB41-E373EBFAE18F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
