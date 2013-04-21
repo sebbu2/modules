@@ -1,0 +1,34 @@
+CPP = g++ 
+CC = gcc
+LD = ld
+BIN = Modules
+MODS = mod.so
+
+.PHONY: all modules
+
+all: $(BIN) $(MODS)
+	
+
+modules: $(MODS)
+	
+
+$(BIN): main.o Modules.o
+	$(CPP) main.o Modules.o -o Modules -ldl
+
+main.o: main.cpp Modules.h
+	$(CPP) -c main.cpp -o main.o
+
+Modules.o: Modules.cpp Modules.h
+	$(CPP) -c Modules.cpp -o Modules.o
+
+mod.so: mod.o
+	$(LD) -shared mod.o -o mod.so
+
+mod.o: mod.c
+	$(CC) -fPIC -c mod.c -o mod.o
+
+clean:
+	@-rm *.o
+
+distclean: clean
+	@-rm Modules{,.exe} mod{.dll,.so}

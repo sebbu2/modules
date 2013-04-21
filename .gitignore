@@ -1,0 +1,12 @@
+*.vcproj
+*.vcproj.*
+*.suo
+*.sln
+*.pdb
+*.ncb
+*.ilk
+*.exp
+*.map
+*.lib
+Debug
+Release
